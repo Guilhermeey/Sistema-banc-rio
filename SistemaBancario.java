@@ -223,7 +223,7 @@ int valor = (int) valorDigitado;
     // 7 - Integrantes do grupo
     public static void mostrarIntegrantes() {
         System.out.println("Integrantes do grupo:");
-        System.out.println("- (Guilherme Alejandro Barros Goycoechea)");
+        System.out.println("- (guilherme Alejandro Barros Goycoechea)");
         System.out.println("- (Lorenzo Penna de Moraes)");
         System.out.println("- (Lucca werner)");
         System.out.println("- (Arthur Zagonell)");
