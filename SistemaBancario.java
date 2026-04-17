@@ -12,11 +12,17 @@ public class SistemaBancario {
     static double totalJuros = 0;
     static double saldoMinimo = Double.MAX_VALUE;
     static double saldoMaximo = Double.MIN_VALUE;
+    static boolean sair = false;
     public static void main(String[] args) {
         int opcao;
         do {
             mostrarMenu();
+            
             opcao = scanner.nextInt();
+            if (opcao < 1 || opcao > 8) {
+    System.out.println("Opção inválida!");
+    continue;
+}
             if (!contaAberta) {
                 switch (opcao) {
                     case 1:
@@ -24,7 +30,7 @@ public class SistemaBancario {
                         break;
                     case 2:
                         System.out.println("Encerrando o sistema...");
-                        opcao = 8;
+                        sair = true;
                         break;
                     default:
                         System.out.println("Opção inválida!");
@@ -51,13 +57,13 @@ public class SistemaBancario {
                         break;
                     case 7:
                         System.out.println("Encerrando o sistema...");
-                        opcao = 8;
+                        sair = true;
                         break;
                     default:
                         System.out.println("Opção inválida!");
                 }
             }
-        } while (opcao != 8);
+        } while (!sair);
     }
     // Aqui é o menu
     public static void mostrarMenu() {
