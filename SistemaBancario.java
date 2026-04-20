@@ -18,7 +18,7 @@ public class SistemaBancario {
     static double totalJuros = 0;
  
     static double saldoMinimo = Double.MAX_VALUE;
-    static double saldoMaximo = Double.MIN_VALUE;
+    static double saldoMaximo = -Double.MAX_VALUE;
  
     static boolean sair = false;
  
@@ -263,8 +263,8 @@ public class SistemaBancario {
         System.out.println("Cliente: " + nomeCliente);
         System.out.printf("Saldo inicial: %.2f\n", saldoInicial);
         System.out.printf("Saldo atual: %.2f\n", saldoAtual);
-        System.out.println("Depósitos: " + qtdDepositos + " | " + valorDepositos);
-        System.out.println("Saques: " + qtdSaques + " | " + valorSaques);
+        System.out.printf("Depósitos: %d | %.2f%n", qtdDepositos, valorDepositos);
+        System.out.printf("Saques: %d | %.2f%n", qtdSaques, valorSaques);
         System.out.printf("Juros recebidos: %.2f\n", totalJuros);
         System.out.printf("Saldo mínimo: %.2f\n", saldoMinimo);
         System.out.printf("Saldo máximo: %.2f\n", saldoMaximo);
@@ -273,8 +273,10 @@ public class SistemaBancario {
     public static void mostrarIntegrantes() {
         mostrarTitulo("INTEGRANTES");
  
-        System.out.println("- João Gonçalves");
-        System.out.println("- Adicione outros nomes");
+        System.out.println("- Guilherme Alejandro Barros Goycoechea");
+        System.out.println("- (Lorenzo Penna de Moraes)");
+        System.out.println("- (Lucca werner)");
+        System.out.println("- (Arthur Zagonell)");
     }
  
     // ================= AUXILIAR =================
