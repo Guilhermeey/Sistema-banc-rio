@@ -1,6 +1,6 @@
 import java.util.Scanner;
  
-public class SistemaBancario {
+public class SistemaBancariov2 {
  
     static Scanner scanner = new Scanner(System.in);
  
@@ -29,7 +29,6 @@ public class SistemaBancario {
         do {
             mostrarMenu();
  
-            // valida entrada
             if (!scanner.hasNextInt()) {
                 System.out.println("Opção inválida!");
                 scanner.next();
