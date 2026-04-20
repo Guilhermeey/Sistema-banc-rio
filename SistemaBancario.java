@@ -29,7 +29,6 @@ public class SistemaBancario {
         do {
             mostrarMenu();
  
-            // valida entrada
             if (!scanner.hasNextInt()) {
                 System.out.println("Opção inválida!");
                 scanner.next();
